@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="BMDBDataSet3" targetNamespace="http://tempuri.org/BMDBDataSet3.xsd" xmlns:mstns="http://tempuri.org/BMDBDataSet3.xsd" xmlns="http://tempuri.org/BMDBDataSet3.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="BMDBConnectionString1" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="BMDBConnectionString1 (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.BoneMarrow.Properties.Settings.GlobalReference.Default.BMDBConnectionString1" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Select_ImmunophenotypingTableAdapter" GeneratorDataComponentClassName="Select_ImmunophenotypingTableAdapter" Name="Select_Immunophenotyping" UserDataComponentName="Select_ImmunophenotypingTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="BMDBConnectionString1 (Settings)" DbObjectName="BMDB.dbo.Select_Immunophenotyping" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT MarkerName, Percentage, Result FROM dbo.Select_Immunophenotyping</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="MarkerName" DataSetColumn="MarkerName" />
+              <Mapping SourceColumn="Percentage" DataSetColumn="Percentage" />
+              <Mapping SourceColumn="Result" DataSetColumn="Result" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="BMDBDataSet3" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="BMDBDataSet3" msprop:Generator_UserDSName="BMDBDataSet3">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Select_Immunophenotyping" msprop:Generator_TableClassName="Select_ImmunophenotypingDataTable" msprop:Generator_TableVarName="tableSelect_Immunophenotyping" msprop:Generator_TablePropName="Select_Immunophenotyping" msprop:Generator_RowDeletingName="Select_ImmunophenotypingRowDeleting" msprop:Generator_UserTableName="Select_Immunophenotyping" msprop:Generator_RowChangingName="Select_ImmunophenotypingRowChanging" msprop:Generator_RowEvHandlerName="Select_ImmunophenotypingRowChangeEventHandler" msprop:Generator_RowDeletedName="Select_ImmunophenotypingRowDeleted" msprop:Generator_RowEvArgName="Select_ImmunophenotypingRowChangeEvent" msprop:Generator_RowChangedName="Select_ImmunophenotypingRowChanged" msprop:Generator_RowClassName="Select_ImmunophenotypingRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="MarkerName" msprop:Generator_ColumnVarNameInTable="columnMarkerName" msprop:Generator_ColumnPropNameInRow="MarkerName" msprop:Generator_ColumnPropNameInTable="MarkerNameColumn" msprop:Generator_UserColumnName="MarkerName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Percentage" msprop:Generator_ColumnVarNameInTable="columnPercentage" msprop:Generator_ColumnPropNameInRow="Percentage" msprop:Generator_ColumnPropNameInTable="PercentageColumn" msprop:Generator_UserColumnName="Percentage" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Result" msprop:Generator_ColumnVarNameInTable="columnResult" msprop:Generator_ColumnPropNameInRow="Result" msprop:Generator_ColumnPropNameInTable="ResultColumn" msprop:Generator_UserColumnName="Result" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

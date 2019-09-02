@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="BMDBDataSetCyto" targetNamespace="http://tempuri.org/BMDBDataSetCyto.xsd" xmlns:mstns="http://tempuri.org/BMDBDataSetCyto.xsd" xmlns="http://tempuri.org/BMDBDataSetCyto.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="BMDBConnectionString1" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="BMDBConnectionString1 (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.BoneMarrow.Properties.Settings.GlobalReference.Default.BMDBConnectionString1" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="SelectCytogeneticsDataTableAdapter" GeneratorDataComponentClassName="SelectCytogeneticsDataTableAdapter" Name="SelectCytogeneticsData" UserDataComponentName="SelectCytogeneticsDataTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="BMDBConnectionString1 (Settings)" DbObjectName="BMDB.dbo.SelectCytogeneticsData" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT PatientID, PName, DrName, Age, AgeType, Gender, VisitDate, ResultDate, CytoTestName, CytoSpecimen, CytoChromosomeCount45, CytoChromosomeCount46, CytoChromosomeCount47, CytoChromosomeCountTotal, CytoCellsCounted45, CytoCellsCounted46, CytoCellsCounted47, CytoCellsCounted4Total, CytoCellsPhotographed45, CytoCellsPhotographed46, CytoCellsPhotographed47, CytoCellsPhotographedTotal, CytoCellsKayrotyped45, CytoCellsKayrotyped46, CytoCellsKayrotyped47, CytoCellsKayrotypedTotal, CytoKaryotype, CytoInterpretation, CytoRecommendation FROM dbo.SelectCytogeneticsData</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="PatientID" DataSetColumn="PatientID" />
+              <Mapping SourceColumn="PName" DataSetColumn="PName" />
+              <Mapping SourceColumn="DrName" DataSetColumn="DrName" />
+              <Mapping SourceColumn="Age" DataSetColumn="Age" />
+              <Mapping SourceColumn="AgeType" DataSetColumn="AgeType" />
+              <Mapping SourceColumn="Gender" DataSetColumn="Gender" />
+              <Mapping SourceColumn="VisitDate" DataSetColumn="VisitDate" />
+              <Mapping SourceColumn="ResultDate" DataSetColumn="ResultDate" />
+              <Mapping SourceColumn="CytoTestName" DataSetColumn="CytoTestName" />
+              <Mapping SourceColumn="CytoSpecimen" DataSetColumn="CytoSpecimen" />
+              <Mapping SourceColumn="CytoChromosomeCount45" DataSetColumn="CytoChromosomeCount45" />
+              <Mapping SourceColumn="CytoChromosomeCount46" DataSetColumn="CytoChromosomeCount46" />
+              <Mapping SourceColumn="CytoChromosomeCount47" DataSetColumn="CytoChromosomeCount47" />
+              <Mapping SourceColumn="CytoChromosomeCountTotal" DataSetColumn="CytoChromosomeCountTotal" />
+              <Mapping SourceColumn="CytoCellsCounted45" DataSetColumn="CytoCellsCounted45" />
+              <Mapping SourceColumn="CytoCellsCounted46" DataSetColumn="CytoCellsCounted46" />
+              <Mapping SourceColumn="CytoCellsCounted47" DataSetColumn="CytoCellsCounted47" />
+              <Mapping SourceColumn="CytoCellsCounted4Total" DataSetColumn="CytoCellsCounted4Total" />
+              <Mapping SourceColumn="CytoCellsPhotographed45" DataSetColumn="CytoCellsPhotographed45" />
+              <Mapping SourceColumn="CytoCellsPhotographed46" DataSetColumn="CytoCellsPhotographed46" />
+              <Mapping SourceColumn="CytoCellsPhotographed47" DataSetColumn="CytoCellsPhotographed47" />
+              <Mapping SourceColumn="CytoCellsPhotographedTotal" DataSetColumn="CytoCellsPhotographedTotal" />
+              <Mapping SourceColumn="CytoCellsKayrotyped45" DataSetColumn="CytoCellsKayrotyped45" />
+              <Mapping SourceColumn="CytoCellsKayrotyped46" DataSetColumn="CytoCellsKayrotyped46" />
+              <Mapping SourceColumn="CytoCellsKayrotyped47" DataSetColumn="CytoCellsKayrotyped47" />
+              <Mapping SourceColumn="CytoCellsKayrotypedTotal" DataSetColumn="CytoCellsKayrotypedTotal" />
+              <Mapping SourceColumn="CytoKaryotype" DataSetColumn="CytoKaryotype" />
+              <Mapping SourceColumn="CytoInterpretation" DataSetColumn="CytoInterpretation" />
+              <Mapping SourceColumn="CytoRecommendation" DataSetColumn="CytoRecommendation" />
+            </Mappings>
+            <Sources>
+              <DbSource ConnectionRef="BMDBConnectionString1 (Settings)" DbObjectName="BMDB.dbo.ProcSelectCytogenetics" DbObjectType="StoredProcedure" FillMethodModifier="Public" FillMethodName="FillBy" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetDataBy" GeneratorSourceName="FillBy" GetMethodModifier="Public" GetMethodName="GetDataBy" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="FillBy">
+                <SelectCommand>
+                  <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
+                    <CommandText>dbo.ProcSelectCytogenetics</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="ReturnValue" ParameterName="@RETURN_VALUE" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@PID" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </Sources>
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="BMDBDataSetCyto" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="BMDBDataSetCyto" msprop:Generator_UserDSName="BMDBDataSetCyto">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="SelectCytogeneticsData" msprop:Generator_TableClassName="SelectCytogeneticsDataDataTable" msprop:Generator_TableVarName="tableSelectCytogeneticsData" msprop:Generator_RowChangedName="SelectCytogeneticsDataRowChanged" msprop:Generator_TablePropName="SelectCytogeneticsData" msprop:Generator_RowDeletingName="SelectCytogeneticsDataRowDeleting" msprop:Generator_RowChangingName="SelectCytogeneticsDataRowChanging" msprop:Generator_RowEvHandlerName="SelectCytogeneticsDataRowChangeEventHandler" msprop:Generator_RowDeletedName="SelectCytogeneticsDataRowDeleted" msprop:Generator_RowClassName="SelectCytogeneticsDataRow" msprop:Generator_UserTableName="SelectCytogeneticsData" msprop:Generator_RowEvArgName="SelectCytogeneticsDataRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="PatientID" msprop:Generator_ColumnVarNameInTable="columnPatientID" msprop:Generator_ColumnPropNameInRow="PatientID" msprop:Generator_ColumnPropNameInTable="PatientIDColumn" msprop:Generator_UserColumnName="PatientID" type="xs:int" />
+              <xs:element name="PName" msprop:Generator_ColumnVarNameInTable="columnPName" msprop:Generator_ColumnPropNameInRow="PName" msprop:Generator_ColumnPropNameInTable="PNameColumn" msprop:Generator_UserColumnName="PName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DrName" msprop:Generator_ColumnVarNameInTable="columnDrName" msprop:Generator_ColumnPropNameInRow="DrName" msprop:Generator_ColumnPropNameInTable="DrNameColumn" msprop:Generator_UserColumnName="DrName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Age" msprop:Generator_ColumnVarNameInTable="columnAge" msprop:Generator_ColumnPropNameInRow="Age" msprop:Generator_ColumnPropNameInTable="AgeColumn" msprop:Generator_UserColumnName="Age" type="xs:decimal" minOccurs="0" />
+              <xs:element name="AgeType" msprop:Generator_ColumnVarNameInTable="columnAgeType" msprop:Generator_ColumnPropNameInRow="AgeType" msprop:Generator_ColumnPropNameInTable="AgeTypeColumn" msprop:Generator_UserColumnName="AgeType" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Gender" msprop:Generator_ColumnVarNameInTable="columnGender" msprop:Generator_ColumnPropNameInRow="Gender" msprop:Generator_ColumnPropNameInTable="GenderColumn" msprop:Generator_UserColumnName="Gender" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="VisitDate" msprop:Generator_ColumnVarNameInTable="columnVisitDate" msprop:Generator_ColumnPropNameInRow="VisitDate" msprop:Generator_ColumnPropNameInTable="VisitDateColumn" msprop:Generator_UserColumnName="VisitDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="ResultDate" msprop:Generator_ColumnVarNameInTable="columnResultDate" msprop:Generator_ColumnPropNameInRow="ResultDate" msprop:Generator_ColumnPropNameInTable="ResultDateColumn" msprop:Generator_UserColumnName="ResultDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="CytoTestName" msprop:Generator_ColumnVarNameInTable="columnCytoTestName" msprop:Generator_ColumnPropNameInRow="CytoTestName" msprop:Generator_ColumnPropNameInTable="CytoTestNameColumn" msprop:Generator_UserColumnName="CytoTestName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CytoSpecimen" msprop:Generator_ColumnVarNameInTable="columnCytoSpecimen" msprop:Generator_ColumnPropNameInRow="CytoSpecimen" msprop:Generator_ColumnPropNameInTable="CytoSpecimenColumn" msprop:Generator_UserColumnName="CytoSpecimen" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CytoChromosomeCount45" msprop:Generator_ColumnVarNameInTable="columnCytoChromosomeCount45" msprop:Generator_ColumnPropNameInRow="CytoChromosomeCount45" msprop:Generator_ColumnPropNameInTable="CytoChromosomeCount45Column" msprop:Generator_UserColumnName="CytoChromosomeCount45" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CytoChromosomeCount46" msprop:Generator_ColumnVarNameInTable="columnCytoChromosomeCount46" msprop:Generator_ColumnPropNameInRow="CytoChromosomeCount46" msprop:Generator_ColumnPropNameInTable="CytoChromosomeCount46Column" msprop:Generator_UserColumnName="CytoChromosomeCount46" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CytoChromosomeCount47" msprop:Generator_ColumnVarNameInTable="columnCytoChromosomeCount47" msprop:Generator_ColumnPropNameInRow="CytoChromosomeCount47" msprop:Generator_ColumnPropNameInTable="CytoChromosomeCount47Column" msprop:Generator_UserColumnName="CytoChromosomeCount47" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CytoChromosomeCountTotal" msprop:Generator_ColumnVarNameInTable="columnCytoChromosomeCountTotal" msprop:Generator_ColumnPropNameInRow="CytoChromosomeCountTotal" msprop:Generator_ColumnPropNameInTable="CytoChromosomeCountTotalColumn" msprop:Generator_UserColumnName="CytoChromosomeCountTotal" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CytoCellsCounted45" msprop:Generator_ColumnVarNameInTable="columnCytoCellsCounted45" msprop:Generator_ColumnPropNameInRow="CytoCellsCounted45" msprop:Generator_ColumnPropNameInTable="CytoCellsCounted45Column" msprop:Generator_UserColumnName="CytoCellsCounted45" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CytoCellsCounted46" msprop:Generator_ColumnVarNameInTable="columnCytoCellsCounted46" msprop:Generator_ColumnPropNameInRow="CytoCellsCounted46" msprop:Generator_ColumnPropNameInTable="CytoCellsCounted46Column" msprop:Generator_UserColumnName="CytoCellsCounted46" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CytoCellsCounted47" msprop:Generator_ColumnVarNameInTable="columnCytoCellsCounted47" msprop:Generator_ColumnPropNameInRow="CytoCellsCounted47" msprop:Generator_ColumnPropNameInTable="CytoCellsCounted47Column" msprop:Generator_UserColumnName="CytoCellsCounted47" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CytoCellsCounted4Total" msprop:Generator_ColumnVarNameInTable="columnCytoCellsCounted4Total" msprop:Generator_ColumnPropNameInRow="CytoCellsCounted4Total" msprop:Generator_ColumnPropNameInTable="CytoCellsCounted4TotalColumn" msprop:Generator_UserColumnName="CytoCellsCounted4Total" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CytoCellsPhotographed45" msprop:Generator_ColumnVarNameInTable="columnCytoCellsPhotographed45" msprop:Generator_ColumnPropNameInRow="CytoCellsPhotographed45" msprop:Generator_ColumnPropNameInTable="CytoCellsPhotographed45Column" msprop:Generator_UserColumnName="CytoCellsPhotographed45" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CytoCellsPhotographed46" msprop:Generator_ColumnVarNameInTable="columnCytoCellsPhotographed46" msprop:Generator_ColumnPropNameInRow="CytoCellsPhotographed46" msprop:Generator_ColumnPropNameInTable="CytoCellsPhotographed46Column" msprop:Generator_UserColumnName="CytoCellsPhotographed46" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CytoCellsPhotographed47" msprop:Generator_ColumnVarNameInTable="columnCytoCellsPhotographed47" msprop:Generator_ColumnPropNameInRow="CytoCellsPhotographed47" msprop:Generator_ColumnPropNameInTable="CytoCellsPhotographed47Column" msprop:Generator_UserColumnName="CytoCellsPhotographed47" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CytoCellsPhotographedTotal" msprop:Generator_ColumnVarNameInTable="columnCytoCellsPhotographedTotal" msprop:Generator_ColumnPropNameInRow="CytoCellsPhotographedTotal" msprop:Generator_ColumnPropNameInTable="CytoCellsPhotographedTotalColumn" msprop:Generator_UserColumnName="CytoCellsPhotographedTotal" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CytoCellsKayrotyped45" msprop:Generator_ColumnVarNameInTable="columnCytoCellsKayrotyped45" msprop:Generator_ColumnPropNameInRow="CytoCellsKayrotyped45" msprop:Generator_ColumnPropNameInTable="CytoCellsKayrotyped45Column" msprop:Generator_UserColumnName="CytoCellsKayrotyped45" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CytoCellsKayrotyped46" msprop:Generator_ColumnVarNameInTable="columnCytoCellsKayrotyped46" msprop:Generator_ColumnPropNameInRow="CytoCellsKayrotyped46" msprop:Generator_ColumnPropNameInTable="CytoCellsKayrotyped46Column" msprop:Generator_UserColumnName="CytoCellsKayrotyped46" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CytoCellsKayrotyped47" msprop:Generator_ColumnVarNameInTable="columnCytoCellsKayrotyped47" msprop:Generator_ColumnPropNameInRow="CytoCellsKayrotyped47" msprop:Generator_ColumnPropNameInTable="CytoCellsKayrotyped47Column" msprop:Generator_UserColumnName="CytoCellsKayrotyped47" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CytoCellsKayrotypedTotal" msprop:Generator_ColumnVarNameInTable="columnCytoCellsKayrotypedTotal" msprop:Generator_ColumnPropNameInRow="CytoCellsKayrotypedTotal" msprop:Generator_ColumnPropNameInTable="CytoCellsKayrotypedTotalColumn" msprop:Generator_UserColumnName="CytoCellsKayrotypedTotal" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CytoKaryotype" msprop:Generator_ColumnVarNameInTable="columnCytoKaryotype" msprop:Generator_ColumnPropNameInRow="CytoKaryotype" msprop:Generator_ColumnPropNameInTable="CytoKaryotypeColumn" msprop:Generator_UserColumnName="CytoKaryotype" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CytoInterpretation" msprop:Generator_ColumnVarNameInTable="columnCytoInterpretation" msprop:Generator_ColumnPropNameInRow="CytoInterpretation" msprop:Generator_ColumnPropNameInTable="CytoInterpretationColumn" msprop:Generator_UserColumnName="CytoInterpretation" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CytoRecommendation" msprop:Generator_ColumnVarNameInTable="columnCytoRecommendation" msprop:Generator_ColumnPropNameInRow="CytoRecommendation" msprop:Generator_ColumnPropNameInTable="CytoRecommendationColumn" msprop:Generator_UserColumnName="CytoRecommendation" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:SelectCytogeneticsData" />
+      <xs:field xpath="mstns:PatientID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

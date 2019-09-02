@@ -1,0 +1,161 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="BMDB" Class="DataClasses1DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=MAINSERVER\LABSERVER;Initial Catalog=BMDB;Integrated Security=True" SettingsObjectName="BoneMarrow.Properties.Settings" SettingsPropertyName="BMDBConnectionString1" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.AntibioticsSource" Member="AntibioticsSources">
+    <Type Name="AntibioticsSource">
+      <Column Name="AntibioticUID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="AntibioticName" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="AntibioticAbbreviation" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.BoneMarrowResults" Member="BoneMarrowResults">
+    <Type Name="BoneMarrowResult">
+      <Column Name="ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="BMBsite" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="BMAspSite" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="BMB_HistoExamin" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="BMAspComment" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Blasts" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="Promyelocytes" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="Myelocytes" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="Juvenile" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="Staff" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="Segmented" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="Lymphocytes" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="Monocytes" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="Eosinophils" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="Basophils" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="Normoblasts" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="PlasmaCells" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="BoneHardness" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="BoneSize" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="BMBconclusion" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="BMAconclusion" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Uni2" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="PhenotypeImmuPhen" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="CommentImmuPhen" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="ConclusionImmuPheno" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="CytoTestName" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="CytoSpecimen" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="CytoChromosomeCount45" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="CytoChromosomeCount46" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="CytoChromosomeCount47" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="CytoChromosomeCountTotal" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="CytoCellsCounted45" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="CytoCellsCounted46" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="CytoCellsCounted47" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="CytoCellsCounted4Total" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="CytoCellsPhotographed45" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="CytoCellsPhotographed46" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="CytoCellsPhotographed47" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="CytoCellsPhotographedTotal" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="CytoCellsKayrotyped45" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="CytoCellsKayrotyped46" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="CytoCellsKayrotyped47" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="CytoCellsKayrotypedTotal" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="CytoKaryotype" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="CytoInterpretation" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="CytoRecommendation" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Association Name="PatientDetail_BoneMarrowResult" Member="PatientDetail" ThisKey="ID" OtherKey="PatientID" Type="PatientDetail" IsForeignKey="true" DeleteRule="CASCADE" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CulturesSource" Member="CulturesSources">
+    <Type Name="CulturesSource">
+      <Column Name="CultureUID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CultureName" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Association Name="CulturesSource_CulturesResult" Member="CulturesResults" ThisKey="CultureUID" OtherKey="CultureUID" Type="CulturesResult" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Images" Member="Images">
+    <Type Name="Image">
+      <Column Name="ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Img1" Type="System.Data.Linq.Binary" DbType="Image" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Img2" Type="System.Data.Linq.Binary" DbType="Image" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Img3" Type="System.Data.Linq.Binary" DbType="Image" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Img4" Type="System.Data.Linq.Binary" DbType="Image" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Img5" Type="System.Data.Linq.Binary" DbType="Image" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Img6" Type="System.Data.Linq.Binary" DbType="Image" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Img7" Type="System.Data.Linq.Binary" DbType="Image" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="ImgName1" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="ImgName2" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="ImgName3" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="ImgName4" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="ImgName5" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="ImgName6" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="ImgName7" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Uni" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Association Name="PatientDetail_Image" Member="PatientDetail" ThisKey="ID" OtherKey="PatientID" Type="PatientDetail" IsForeignKey="true" DeleteRule="CASCADE" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Immunophenotyping" Member="Immunophenotypings">
+    <Type Name="Immunophenotyping">
+      <Column Name="PatientID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="MarkerName" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Percentage" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="TabIDImmun" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Result" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Association Name="PatientDetail_Immunophenotyping" Member="PatientDetail" ThisKey="PatientID" OtherKey="PatientID" Type="PatientDetail" IsForeignKey="true" DeleteRule="CASCADE" />
+    </Type>
+  </Table>
+  <Table Name="dbo.OrganismSource" Member="OrganismSources">
+    <Type Name="OrganismSource">
+      <Column Name="OrganismUID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="OrganismName" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Association Name="OrganismSource_CulturesResult" Member="CulturesResults" ThisKey="OrganismUID" OtherKey="OrganismUID" Type="CulturesResult" />
+    </Type>
+  </Table>
+  <Table Name="dbo.PatientDetails" Member="PatientDetails">
+    <Type Name="PatientDetail">
+      <Column Name="PatientID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="PName" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="DrName" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Age" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="AgeType" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Gender" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="email" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Adress" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="VisitDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ResultDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Smoker" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Pregnant" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Fasting" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="FastingHrs" Type="System.Single" DbType="Real" CanBeNull="true" />
+      <Column Name="GlandsMed" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="GlandsMedName" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Diabetic" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="DiabetusMed" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Association Name="PatientDetail_BoneMarrowResult" Member="BoneMarrowResults" ThisKey="PatientID" OtherKey="ID" Type="BoneMarrowResult" />
+      <Association Name="PatientDetail_Image" Member="Images" ThisKey="PatientID" OtherKey="ID" Type="Image" />
+      <Association Name="PatientDetail_Immunophenotyping" Member="Immunophenotypings" ThisKey="PatientID" OtherKey="PatientID" Type="Immunophenotyping" />
+      <Association Name="PatientDetail_CulturesResult" Member="CulturesResults" ThisKey="PatientID" OtherKey="PatientID" Type="CulturesResult" />
+    </Type>
+  </Table>
+  <Table Name="dbo.AntibioticResult" Member="AntibioticResults">
+    <Type Name="AntibioticResult">
+      <Column Name="CulturesResultsUID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="AntibioticResultUID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="AntibioticNameForResult" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="AntibioticStatus" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Association Name="CulturesResult_AntibioticResult" Member="CulturesResult" ThisKey="CulturesResultsUID" OtherKey="CulturesResultsUID" Type="CulturesResult" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CulturesResult" Member="CulturesResults">
+    <Type Name="CulturesResult">
+      <Column Name="PatientID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CultureUID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CulturesResultsUID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="DirectFilm" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="PUS" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="RBCs" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="OrganismUID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Epithelial" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="NotesOrComment" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="OtherInfo" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="CultureCondition" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="CultureNameForResult" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Association Name="CulturesResult_AntibioticResult" Member="AntibioticResults" ThisKey="CulturesResultsUID" OtherKey="CulturesResultsUID" Type="AntibioticResult" />
+      <Association Name="CulturesSource_CulturesResult" Member="CulturesSource" ThisKey="CultureUID" OtherKey="CultureUID" Type="CulturesSource" IsForeignKey="true" />
+      <Association Name="OrganismSource_CulturesResult" Member="OrganismSource" ThisKey="OrganismUID" OtherKey="OrganismUID" Type="OrganismSource" IsForeignKey="true" />
+      <Association Name="PatientDetail_CulturesResult" Member="PatientDetail" ThisKey="PatientID" OtherKey="PatientID" Type="PatientDetail" IsForeignKey="true" />
+    </Type>
+  </Table>
+</Database>

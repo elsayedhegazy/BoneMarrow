@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 24.75" name="DataClasses1">
+  <DataContextMoniker Name="/DataClasses1DataContext" />
+  <nestedChildShapes>
+    <classShape Id="0a0f75b4-da53-4574-a21d-9b3ff22bab3c" absoluteBounds="3.75, 1.375, 2, 1.2605004882812523">
+      <DataClassMoniker Name="/DataClasses1DataContext/AntibioticsSource" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9518e18e-9350-461b-8d37-6ae9512ce514" absoluteBounds="3.765, 1.8350000000000009, 1.9700000000000002, 0.70050048828125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="38b1e4ae-bd03-4166-a22a-94fc08f4faa5" absoluteBounds="3.5, 13.75, 2, 8.3274357096354166">
+      <DataClassMoniker Name="/DataClasses1DataContext/BoneMarrowResult" />
+      <nestedChildShapes>
+        <elementListCompartment Id="4c0b2473-a552-4b72-be33-5e406eedf845" absoluteBounds="3.515, 14.21, 1.9700000000000002, 7.767435709635417" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d8860b3c-b5ea-464f-9760-edfa12fb6f2f" absoluteBounds="3.75, 23.375, 2, 1.0961531575520809">
+      <DataClassMoniker Name="/DataClasses1DataContext/CulturesSource" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e04f35c8-8138-43b7-811b-e1e0f0710460" absoluteBounds="3.765, 23.835, 1.9700000000000002, 0.53615315755208326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b77c5585-3412-4209-ab53-18d733cbf34a" absoluteBounds="3.5, 5.875, 2, 3.3970157877604175">
+      <DataClassMoniker Name="/DataClasses1DataContext/Image" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3044507e-aa24-4f44-bbe2-5620b8b9b012" absoluteBounds="3.5150000005960464, 6.33500000089407, 1.9700000000000002, 2.8370157877604165" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="0940245f-45db-4996-872a-91b967ea4ca6" absoluteBounds="3.5, 3.625, 2, 1.5891951497395827">
+      <DataClassMoniker Name="/DataClasses1DataContext/Immunophenotyping" />
+      <nestedChildShapes>
+        <elementListCompartment Id="7e896f0a-0824-41d9-94c2-24d8ac7c6e92" absoluteBounds="3.5150000005960464, 4.08500000089407, 1.9700000000000002, 1.0291951497395833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="7e558b78-6d0c-4e17-b2fe-6d05d1c49e79" absoluteBounds="3.75, 10.5, 2, 1.0961531575520844">
+      <DataClassMoniker Name="/DataClasses1DataContext/OrganismSource" />
+      <nestedChildShapes>
+        <elementListCompartment Id="5031bc20-0e76-455d-b576-1f7c681f764d" absoluteBounds="3.765, 10.96, 1.9700000000000002, 0.53615315755208326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="83d32775-1cdf-451b-b4c2-3d05fa54f088" absoluteBounds="0.75, 9.125, 2, 3.7257104492187487">
+      <DataClassMoniker Name="/DataClasses1DataContext/PatientDetail" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6ffbf545-2d53-437b-ba8f-37945e0fdc51" absoluteBounds="0.76500000059604645, 9.58500000089407, 1.9700000000000002, 3.16571044921875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(1.75 : 12.8507104492187); (1.75 : 17.9137178548177); (3.5 : 17.9137178548177)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DataClasses1DataContext/PatientDetail/PatientDetail_BoneMarrowResult" />
+      <nodes>
+        <classShapeMoniker Id="83d32775-1cdf-451b-b4c2-3d05fa54f088" />
+        <classShapeMoniker Id="38b1e4ae-bd03-4166-a22a-94fc08f4faa5" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 12.2546818035158); (3.59375 : 12.2546818035158); (3.59375 : 9.27201578776042)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DataClasses1DataContext/PatientDetail/PatientDetail_Image" />
+      <nodes>
+        <classShapeMoniker Id="83d32775-1cdf-451b-b4c2-3d05fa54f088" />
+        <classShapeMoniker Id="b77c5585-3412-4209-ab53-18d733cbf34a" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(1.75 : 9.125); (1.75 : 4.41959757486979); (3.5 : 4.41959757486979)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DataClasses1DataContext/PatientDetail/PatientDetail_Immunophenotyping" />
+      <nodes>
+        <classShapeMoniker Id="83d32775-1cdf-451b-b4c2-3d05fa54f088" />
+        <classShapeMoniker Id="0940245f-45db-4996-872a-91b967ea4ca6" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="6fbc5396-b8be-4dc0-9bd2-1654b051339a" absoluteBounds="7.875, 10.125, 2, 1.4248478190104168">
+      <DataClassMoniker Name="/DataClasses1DataContext/AntibioticResult" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f37c8827-d9eb-4bd4-ba02-0156fcee6210" absoluteBounds="7.89, 10.585, 1.9700000000000002, 0.86484781901041674" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="957f5d92-8ad6-4a7b-b910-7a67a7e2c47a" absoluteBounds="7, 11.875, 2, 2.73962646484375">
+      <DataClassMoniker Name="/DataClasses1DataContext/CulturesResult" />
+      <nestedChildShapes>
+        <elementListCompartment Id="dfd72f1f-32f4-4306-ad4a-780efbc54dab" absoluteBounds="7.015, 12.335, 1.9700000000000002, 2.17962646484375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(8.4375 : 11.875); (8.4375 : 11.5498478190104)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DataClasses1DataContext/CulturesResult/CulturesResult_AntibioticResult" />
+      <nodes>
+        <classShapeMoniker Id="957f5d92-8ad6-4a7b-b910-7a67a7e2c47a" />
+        <classShapeMoniker Id="6fbc5396-b8be-4dc0-9bd2-1654b051339a" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.65625 : 23.375); (5.65625 : 12.78125); (7 : 12.78125)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DataClasses1DataContext/CulturesSource/CulturesSource_CulturesResult" />
+      <nodes>
+        <classShapeMoniker Id="d8860b3c-b5ea-464f-9760-edfa12fb6f2f" />
+        <classShapeMoniker Id="957f5d92-8ad6-4a7b-b910-7a67a7e2c47a" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.703125 : 11.5961531575521); (5.703125 : 12.2968725); (7 : 12.2968725)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DataClasses1DataContext/OrganismSource/OrganismSource_CulturesResult" />
+      <nodes>
+        <classShapeMoniker Id="7e558b78-6d0c-4e17-b2fe-6d05d1c49e79" />
+        <classShapeMoniker Id="957f5d92-8ad6-4a7b-b910-7a67a7e2c47a" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 12.0023409017579); (3.51041666666667 : 12.0023409017579 : JumpStart); (3.67708333333333 : 12.0023409017579 : JumpEnd); (5.61979166666667 : 12.0023409017579 : JumpStart); (5.78645833333333 : 12.0023409017579 : JumpEnd); (7 : 12.0023409017579)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DataClasses1DataContext/PatientDetail/PatientDetail_CulturesResult" />
+      <nodes>
+        <classShapeMoniker Id="83d32775-1cdf-451b-b4c2-3d05fa54f088" />
+        <classShapeMoniker Id="957f5d92-8ad6-4a7b-b910-7a67a7e2c47a" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

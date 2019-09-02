@@ -1,0 +1,406 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7BEB91F8-C25E-4E92-9ACC-C918F6A0B394}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BoneMarrow</RootNamespace>
+    <AssemblyName>BoneMarrow</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BM.Designer.cs">
+      <DependentUpon>BM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BMACrystalReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BMACrystalReportForm.Designer.cs">
+      <DependentUpon>BMACrystalReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BMDBDataSet.cs">
+      <DependentUpon>BMDBDataSet.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BMDBDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BMDBDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BMDBDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BMDBDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BMDBDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BMDBDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BMDBDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BMDBDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BMDBDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BMDBDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BMDBDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BMDBDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BMDBDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BMDBDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BMDBDataSetCyto.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BMDBDataSetCyto.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CulturesSection.cs" />
+    <Compile Include="DataClasses1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataClasses1.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="FormAddImages.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAddImages.Designer.cs">
+      <DependentUpon>FormAddImages.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBMAReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBMAReport.Designer.cs">
+      <DependentUpon>frmBMAReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBMBiposyRep.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBMBiposyRep.Designer.cs">
+      <DependentUpon>frmBMBiposyRep.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCytogeneticsRep.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCytogeneticsRep.Designer.cs">
+      <DependentUpon>frmCytogeneticsRep.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmImagesReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmImagesReport.Designer.cs">
+      <DependentUpon>frmImagesReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSpellingChecker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSpellingChecker.Designer.cs">
+      <DependentUpon>frmSpellingChecker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FullDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FullDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReportBMA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportBMA.Designer.cs">
+      <DependentUpon>ReportBMA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\BMACrystalReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BMACrystalReport.rpt</DependentUpon>
+    </Compile>
+    <Compile Include="RichTextBoxWPF.xaml.cs">
+      <DependentUpon>RichTextBoxWPF.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SplashScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SplashScreen.Designer.cs">
+      <DependentUpon>SplashScreen.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="BMACrystalReportForm.resx">
+      <DependentUpon>BMACrystalReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="BMDBDataSet5.xsc">
+      <DependentUpon>BMDBDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="BMDBDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BMDBDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BMDBDataSet5.xss">
+      <DependentUpon>BMDBDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="BMDBDataSet6.xsc">
+      <DependentUpon>BMDBDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="BMDBDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BMDBDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BMDBDataSet6.xss">
+      <DependentUpon>BMDBDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="DataClasses1.dbml.layout">
+      <DependentUpon>DataClasses1.dbml</DependentUpon>
+    </None>
+    <EmbeddedResource Include="frmBMAReport.resx">
+      <DependentUpon>frmBMAReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBMBiposyRep.resx">
+      <DependentUpon>frmBMBiposyRep.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCytogeneticsRep.resx">
+      <DependentUpon>frmCytogeneticsRep.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmImagesReport.resx">
+      <DependentUpon>frmImagesReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSpellingChecker.resx">
+      <DependentUpon>frmSpellingChecker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\BMACrystalReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>BMACrystalReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\BMAspReport.rdlc" />
+    <EmbeddedResource Include="Reports\BMBReport.rdlc" />
+    <EmbeddedResource Include="Reports\BMImages.rdlc" />
+    <EmbeddedResource Include="Reports\CulturesReport.rdlc" />
+    <EmbeddedResource Include="Reports\CytoGeneticsBMReport.rdlc" />
+    <EmbeddedResource Include="Reports\ImmunophenoReport.rdlc" />
+    <EmbeddedResource Include="SplashScreen.resx">
+      <DependentUpon>SplashScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="BMDBDataSet.xsc">
+      <DependentUpon>BMDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="BMDBDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BMDBDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BMDBDataSet.xss">
+      <DependentUpon>BMDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="BMDBDataSet1.xsc">
+      <DependentUpon>BMDBDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="BMDBDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BMDBDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BMDBDataSet1.xss">
+      <DependentUpon>BMDBDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="BMDBDataSet2.xsc">
+      <DependentUpon>BMDBDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="BMDBDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BMDBDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BMDBDataSet2.xss">
+      <DependentUpon>BMDBDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="BMDBDataSet3.xsc">
+      <DependentUpon>BMDBDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="BMDBDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BMDBDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BMDBDataSet3.xss">
+      <DependentUpon>BMDBDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="BMDBDataSet4.xsc">
+      <DependentUpon>BMDBDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="BMDBDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BMDBDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BMDBDataSet4.xss">
+      <DependentUpon>BMDBDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="BMDBDataSetCyto.xsc">
+      <DependentUpon>BMDBDataSetCyto.xsd</DependentUpon>
+    </None>
+    <None Include="BMDBDataSetCyto.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BMDBDataSetCyto.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BMDBDataSetCyto.xss">
+      <DependentUpon>BMDBDataSetCyto.xsd</DependentUpon>
+    </None>
+    <EmbeddedResource Include="BM.resx">
+      <DependentUpon>BM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAddImages.resx">
+      <DependentUpon>FormAddImages.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="ReportBMA.resx">
+      <DependentUpon>ReportBMA.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="DataClasses1.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>DataClasses1.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FullDataSet.xsc">
+      <DependentUpon>FullDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FullDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FullDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FullDataSet.xss">
+      <DependentUpon>FullDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\DataSources\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="333 red blood cells.jpg" />
+    <None Include="Resources\DeleteRed.png" />
+    <None Include="Resources\spellcheck.jpg" />
+    <None Include="Resources\MS-Word.png" />
+    <None Include="Resources\333 red blood cells.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="RichTextBoxWPF.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
