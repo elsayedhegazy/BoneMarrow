@@ -1,0 +1,24 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BoneMarrow", "BoneMarrow\BoneMarrow.csproj", "{7BEB91F8-C25E-4E92-9ACC-C918F6A0B394}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Bone Marrow BAZL", "Bone Marrow BAZL\Bone Marrow BAZL.vdproj", "{6A58ADAE-D8C2-465F-A7B6-75FED869DB24}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7BEB91F8-C25E-4E92-9ACC-C918F6A0B394}.Debug|x86.ActiveCfg = Debug|x86
+		{7BEB91F8-C25E-4E92-9ACC-C918F6A0B394}.Debug|x86.Build.0 = Debug|x86
+		{7BEB91F8-C25E-4E92-9ACC-C918F6A0B394}.Release|x86.ActiveCfg = Release|x86
+		{7BEB91F8-C25E-4E92-9ACC-C918F6A0B394}.Release|x86.Build.0 = Release|x86
+		{6A58ADAE-D8C2-465F-A7B6-75FED869DB24}.Debug|x86.ActiveCfg = Debug
+		{6A58ADAE-D8C2-465F-A7B6-75FED869DB24}.Release|x86.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
